@@ -1,1 +1,1 @@
-Welcome to my activities page!
+Welcome to my Activities Page!
