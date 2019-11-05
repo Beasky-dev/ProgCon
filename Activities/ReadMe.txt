@@ -1,1 +1,1 @@
-Welcome to my machine projects page!
+Welcome to my activities page!
