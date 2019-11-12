@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-12 08:55:01 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLUU1UEIyN0c7MjAxOS0xMC0yOTswOTo1OToyNiBBTTsyNzE0"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLUU1UEIyN0c7MjAxOS0xMC0yOTsxMTowNjoxMiBBTTsxOzI4MDI="/>
+        <attribute name="edited" value="YW5nZ2U7REVTS1RPUC1CQjdFQlJEOzIwMTktMTEtMTA7MTA6MzU6NDggUE07MTsyOTU3"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMS0xMjswODo1Mzo1NyBBTTsyO2FuZ2dlO0RFU0tUT1AtQkI3RUJSRDsyMDE5LTExLTExOzAxOjA0OjE1IEFNO0FyZWFfb2ZfQ2lyY2xlLmZwcmc7NzEwNg=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMS0xMjswODo1NTowMSBBTTsxOzIzMDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Name" type="String" array="False" size=""/>
+            <assign variable="Name" expression="&quot;Folks!&quot;"/>
+            <output expression="&quot;Hi There &quot; &amp; name" newline="True"/>
+            <output expression="&quot;Ready to add 2 variables?&quot;" newline="True"/>
+            <output expression="&quot;Type (yes) kung g ka&quot;" newline="True"/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <assign variable="Answer" expression="&quot;Yes&quot;"/>
+            <input variable="Answer"/>
+            <if expression="Answer ==&quot;yes&quot;">
+                <then>
+                    <declare name="Num1" type="Integer" array="False" size=""/>
+                    <output expression="&quot;Enter variable 1&quot;" newline="True"/>
+                    <input variable="Num1"/>
+                    <declare name="Num2" type="Integer" array="False" size=""/>
+                    <output expression="&quot;Enter variable 2&quot;" newline="True"/>
+                    <input variable="Num2"/>
+                    <declare name="Result" type="Integer" array="False" size=""/>
+                    <assign variable="Result" expression="Num1 + Num2"/>
+                    <output expression="&quot;The answer is: &quot; &amp;result" newline="True"/>
+                    <output expression="&quot;Restart?&quot;" newline="True"/>
+                    <output expression="&quot;Type (yes) kung g ka&quot;" newline="True"/>
+                    <declare name="Reanswer" type="String" array="False" size=""/>
+                    <assign variable="Reanswer" expression="&quot;yes&quot;"/>
+                    <input variable="Answer"/>
+                    <if expression="Reanswer ==&quot;yes&quot;">
+                        <then>
+                            <call expression="Main"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Salamat, babye&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Ge, babye&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
