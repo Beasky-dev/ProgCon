@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="angge"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-12 08:55:12 AM"/>
+        <attribute name="created" value="YW5nZ2U7REVTS1RPUC1CQjdFQlJEOzIwMTktMTEtMTE7MTI6Mzk6MTcgQU07MjgzNw=="/>
+        <attribute name="edited" value="YW5nZ2U7REVTS1RPUC1CQjdFQlJEOzIwMTktMTEtMTE7MTI6NDA6MjEgQU07MTtSYW1zO0RFU0tUT1AtRTVQQjI3RzsyMDE5LTEwLTI5OzA5OjU5OjI2IEFNO2JvcmphLmZwcmc7Njc2Nw=="/>
+        <attribute name="edited" value="YW5nZ2U7REVTS1RPUC1CQjdFQlJEOzIwMTktMTEtMTE7MTI6NTc6MTIgQU07NTsyOTQ0"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMS0xMjswODo1MDoyOSBBTTsyO1JhbXM7REVTS1RPUC1FNVBCMjdHOzIwMTktMTAtMjk7MDk6NTk6MjYgQU07Ym9yamEuZnByZzs2MTQz"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMS0xMjswODo1MzowNyBBTTsyO2FuZ2dlO0RFU0tUT1AtQkI3RUJSRDsyMDE5LTExLTExOzAxOjA0OjE1IEFNO0FyZWFfb2ZfQ2lyY2xlLmZwcmc7NzEwMQ=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMS0xMjswODo1NToxMiBBTTszOzIzMDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Name" type="String" array="False" size=""/>
+            <assign variable="Name" expression="&quot;Folks!&quot;"/>
+            <output expression="&quot;Hi There &quot; &amp; name" newline="True"/>
+            <output expression="&quot;Ready to know if its an ODD or EVEN NUMBER?&quot;" newline="True"/>
+            <output expression="&quot;Type (yes) kung g ka&quot;" newline="True"/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <assign variable="Answer" expression="&quot;yes&quot;"/>
+            <input variable="Answer"/>
+            <if expression="Answer ==&quot;yes&quot;">
+                <then>
+                    <declare name="number" type="Integer" array="False" size=""/>
+                    <declare name="oddoreven" type="Integer" array="False" size=""/>
+                    <output expression="&quot;Enter Number: &quot;" newline="True"/>
+                    <input variable="Number"/>
+                    <assign variable="oddoreven" expression="number % 2"/>
+                    <if expression="oddoreven == 0">
+                        <then>
+                            <output expression="number &amp;&quot; is even&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="number &amp;&quot; is odd&quot;" newline="True"/>
+                        </else>
+                    </if>
+                    <output expression="&quot;Restart?&quot;" newline="True"/>
+                    <output expression="&quot;Type (yes) kung g ka&quot;" newline="True"/>
+                    <declare name="Reanswer" type="String" array="False" size=""/>
+                    <assign variable="Reanswer" expression="&quot;yes&quot;"/>
+                    <input variable="Reanswer"/>
+                    <if expression="Reanswer ==&quot;yes&quot;">
+                        <then>
+                            <call expression="Main"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Thanks, babye&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Ge, babye&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
