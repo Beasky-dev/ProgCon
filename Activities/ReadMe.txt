@@ -6,3 +6,5 @@ A3- Pseudo-code Exercises
 A4- Flowgarithm Exercises Discussion
 A5- Chapter 1-Written Activity
 A6- Chapter 2-Written Activity
+
+Note: Please exclude the unwanted files starting with the file name "M".
