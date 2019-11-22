@@ -1,4 +1,4 @@
-Welcome to my Activities Page!
+Welcome to my "Activities" Page!
 
 A1- Flowcharts & Pseudocodes Research
 A2- Flow-charting Exercise (M1&M2)
