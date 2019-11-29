@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="angge"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-30 02:16:45 AM"/>
+        <attribute name="created" value="YW5nZ2U7REVTS1RPUC1CQjdFQlJEOzIwMTktMTEtMTE7MTI6Mzk6MTcgQU07MjgzNw=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMS0xMjswODo1MDoyOSBBTTsyO1JhbXM7REVTS1RPUC1FNVBCMjdHOzIwMTktMTAtMjk7MDk6NTk6MjYgQU07Ym9yamEuZnByZzs2MTQz"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMS0xMjswODo1MzowNyBBTTsyO2FuZ2dlO0RFU0tUT1AtQkI3RUJSRDsyMDE5LTExLTExOzAxOjA0OjE1IEFNO0FyZWFfb2ZfQ2lyY2xlLmZwcmc7NzEwMQ=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMS0xMjswODo1NToxMiBBTTszOzIzMDY="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTY7MjAxOS0xMS0zMDswMjoxNDo0NyBBTTsxO2FuZ2dlO0RFU0tUT1AtQkI3RUJSRDsyMDE5LTExLTExOzEyOjM5OjE3IEFNO00zXzAzX0JPUkpBICgxKS5mcHJnOzY2ODE="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTY7MjAxOS0xMS0zMDswMjoxNjo0NSBBTTsyOzIzMDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Name" type="String" array="False" size=""/>
+            <assign variable="Name" expression="&quot;Folks!&quot;"/>
+            <output expression="&quot;Hi There &quot; &amp; name" newline="True"/>
+            <output expression="&quot;Handa ka na bang malaman EQUIVALENT NG GRADE MO?&quot;" newline="True"/>
+            <output expression="&quot;Type (yes) kung g ka&quot;" newline="True"/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <assign variable="Answer" expression="&quot;yes&quot;"/>
+            <input variable="Answer"/>
+            <if expression="Answer ==&quot;yes&quot;">
+                <then>
+                    <declare name="number" type="Integer" array="False" size=""/>
+                    <output expression="&quot;Enter Number: &quot;" newline="True"/>
+                    <input variable="Number"/>
+                    <if expression="number&gt;=101">
+                        <then>
+                            <output expression="number &amp;&quot;??? Te hanggang 100 lang yung grade&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="number&gt;=95">
+                                <then>
+                                    <output expression="number &amp;&quot;= 4.0, Galing-galing!!!Parang rebisco lang may pasobra pang isa&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="number&gt;=91">
+                                        <then>
+                                            <output expression="number &amp;&quot;= 3.5, Good Job! I-kwatro mo na para may pasobra&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="number&gt;=87">
+                                                <then>
+                                                    <output expression="number &amp;&quot;= 3.0, Ayos!!! Nangangamoy kayang I-kwatro&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="number&gt;=83">
+                                                        <then>
+                                                            <output expression="number &amp;&quot;= 2.5, Para love ka nya i-tres mo na&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="number&gt;=79">
+                                                                <then>
+                                                                    <output expression="number &amp;&quot;= 2.0, Keep it UUUUUUUPPPPPP&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="number&gt;=75">
+                                                                        <then>
+                                                                            <output expression="number &amp;&quot;= 1.5, More more more.....&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="number&gt;=70">
+                                                                                <then>
+                                                                                    <output expression="number &amp;&quot;= 1.0, labaaannn langggg&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="number&gt;=0">
+                                                                                        <then>
+                                                                                            <output expression="number &amp;&quot;???!!! Patay kang bata ka REPEAT kaT^T&quot;" newline="True"/>
+                                                                                        </then>
+                                                                                        <else/>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <output expression="&quot;Restart?&quot;" newline="True"/>
+                    <output expression="&quot;Type (yes) kung g ka&quot;" newline="True"/>
+                    <declare name="Reanswer" type="String" array="False" size=""/>
+                    <assign variable="Reanswer" expression="&quot;yes&quot;"/>
+                    <input variable="Reanswer"/>
+                    <if expression="Reanswer ==&quot;yes&quot;">
+                        <then>
+                            <call expression="Main"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Thanks, babye&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Ge, babye&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
