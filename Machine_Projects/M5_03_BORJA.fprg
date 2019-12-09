@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-07 02:50:42 PM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMi0wNzswMToyNjo1MCBBTTsyMTk0"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMi0wNzswMToyNzo0NiBBTTsxO1JhbXM7TEFCMzE0QzE1OzIwMTktMTItMDQ7MDE6NDU6MDkgQU07TTVfMDJfQkFZT1QuZnByZzs1OTAy"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMi0wNzswMTozNzo1MiBBTTsxO2FuZ2dlO0RFU0tUT1AtQkI3RUJSRDsyMDE5LTExLTExOzEyOjM5OjE3IEFNO000XzAzX0JPUkpBLmZwcmc7NjUyMg=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMi0wNzswMjowNDozNyBBTTsyOzIzMDU="/>
+        <attribute name="edited" value="YW5nZ2U7REVTS1RPUC1CQjdFQlJEOzIwMTktMTItMDc7MDE6MTM6MTMgUE07MjtSYW1zO0RFU0tUT1AtRTVQQjI3RzsyMDE5LTEwLTI5OzA5OjU5OjI2IEFNO00xXzAzX0JPUkpBLmZwcmc7NzA0Mw=="/>
+        <attribute name="edited" value="YW5nZ2U7REVTS1RPUC1CQjdFQlJEOzIwMTktMTItMDc7MDI6NTA6NDIgUE07NDsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Name" type="String" array="False" size=""/>
+            <assign variable="Name" expression="&quot;Folks!&quot;"/>
+            <output expression="&quot;Hi There &quot; &amp; name" newline="True"/>
+            <output expression="&quot;Ready to know the least number from 3 inputs?&quot;" newline="True"/>
+            <output expression="&quot;Type (yes) kung g ka&quot;" newline="True"/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <assign variable="Answer" expression="&quot;yes&quot;"/>
+            <input variable="Answer"/>
+            <if expression="Answer ==&quot;yes&quot;">
+                <then>
+                    <output expression="&quot;Lagay ka ng 3 number&quot;" newline="True"/>
+                    <declare name="Numbers" type="String" array="False" size=""/>
+                    <declare name="Num1" type="Real" array="False" size=""/>
+                    <input variable="Num1"/>
+                    <output expression="&quot;Lagay pa&quot;" newline="True"/>
+                    <declare name="Num2" type="Real" array="False" size=""/>
+                    <input variable="Num2"/>
+                    <output expression="&quot;Isa pa&quot;" newline="True"/>
+                    <declare name="Num3" type="Real" array="False" size=""/>
+                    <input variable="Num3"/>
+                    <if expression="Num1&lt;Num2">
+                        <then>
+                            <if expression="Num1&lt;Num3">
+                                <then>
+                                    <output expression="Num1 &amp; &quot; ang pinakamababang number&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="Num3 &amp; &quot; ang pinakamababang number&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="Num2&lt;Num3">
+                                <then>
+                                    <output expression="Num2 &amp; &quot; ang pinakamababang number&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="Num3 &amp; &quot; ang pinakamababang number&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <output expression="&quot;Isa pa?&quot;" newline="True"/>
+                    <output expression="&quot;Type (yes) kung g ka&quot;" newline="True"/>
+                    <declare name="Reanswer" type="String" array="False" size=""/>
+                    <assign variable="Reanswer" expression="&quot;yes&quot;"/>
+                    <input variable="Answer"/>
+                    <if expression="Reanswer ==&quot;yes&quot;">
+                        <then>
+                            <call expression="Main"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Salamat, babye&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Ge, babye&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
