@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-21 12:04:52 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLUU1UEIyN0c7MjAxOS0xMC0yOTswOTo1OToyNiBBTTsyNzE0"/>
+        <attribute name="edited" value="YW5nZ2U7REVTS1RPUC1CQjdFQlJEOzIwMTktMTEtMTA7MTA6MzU6NDggUE07MTsyOTU3"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMS0xMjswODo1Mzo1NyBBTTsyO2FuZ2dlO0RFU0tUT1AtQkI3RUJSRDsyMDE5LTExLTExOzAxOjA0OjE1IEFNO0FyZWFfb2ZfQ2lyY2xlLmZwcmc7NzEwNg=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMS0xMjswODo1NTowMSBBTTsxOzIzMDI="/>
+        <attribute name="edited" value="RWxhaW5lIEJlYXRyaXogQm9yamE7TEFQVE9QLUNON0w5Ujg0OzIwMjAtMDEtMjE7MTI6MDA6MzcgQU07MztFbGFpbmUgQmVhdHJpeiBCb3JqYTtMQVBUT1AtQ043TDlSODQ7MjAyMC0wMS0yMDsxMDo1NDo1MCBQTTs0LiDCsEMgYW5kIMKwRiBDb252ZXJ0ZXIuZnByZzsxMDk5Nw=="/>
+        <attribute name="edited" value="RWxhaW5lIEJlYXRyaXogQm9yamE7TEFQVE9QLUNON0w5Ujg0OzIwMjAtMDEtMjE7MTI6MDQ6NTIgQU07NTs0MjY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1" type="Integer" array="False" size=""/>
+            <declare name="Num2" type="Integer" array="False" size=""/>
+            <declare name="Result" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="true"/>
+            <output expression="&quot;Hi there, Welcome to Division of 2 Given Values&quot;" newline="True"/>
+            <while expression="ExitCode == true">
+                <output expression="&quot;Ready to DIVIDE from 2 GIVEN VALUES?&quot;" newline="True"/>
+                <output expression="&quot;Note: This is a case sensitive program&quot;" newline="True"/>
+                <output expression="&quot;Therefore, typing (yes) as a response to continue is neccessary&quot;" newline="True"/>
+                <assign variable="Answer" expression="&quot;Yes&quot;"/>
+                <input variable="Answer"/>
+                <if expression="Answer ==&quot;yes&quot;">
+                    <then>
+                        <output expression="&quot;Enter dividend/numerator&quot;" newline="True"/>
+                        <input variable="Num1"/>
+                        <output expression="&quot;Enter divisor/denominator&quot;" newline="True"/>
+                        <input variable="Num2"/>
+                        <assign variable="Result" expression="Num1 / Num2"/>
+                        <output expression="&quot;The answer is: &quot; &amp;result" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Error. Please try again.&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Restart?&quot;" newline="True"/>
+                <output expression="&quot;Type 'yes' to restart&quot;" newline="True"/>
+                <assign variable="Again" expression="&quot;yes&quot;"/>
+                <input variable="Again"/>
+                <if expression="Again ==&quot;yes&quot;">
+                    <then>
+                        <call expression="Main"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Error. Please try again.&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

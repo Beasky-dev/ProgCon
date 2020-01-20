@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="angge"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-20 11:45:59 PM"/>
+        <attribute name="created" value="YW5nZ2U7REVTS1RPUC1CQjdFQlJEOzIwMTktMTEtMTE7MDE6MDQ6MTUgQU07MjgyNQ=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMS0xMjswODo1NTowOSBBTTs0OzIzMTM="/>
+        <attribute name="edited" value="RWxhaW5lIEJlYXRyaXogQm9yamE7TEFQVE9QLUNON0w5Ujg0OzIwMTktMTItMjg7MDI6NTk6MTUgUE07MzthbmdnZTtERVNLVE9QLUJCN0VCUkQ7MjAxOS0xMS0xMTswMTowNDoxNSBBTTtNMl8wM19CT1JKQV8odi4xKS5mcHJnOzg4OTM="/>
+        <attribute name="edited" value="RWxhaW5lIEJlYXRyaXogQm9yamE7TEFQVE9QLUNON0w5Ujg0OzIwMjAtMDEtMjA7MTE6NDA6MTUgUE07MjtFbGFpbmUgQmVhdHJpeiBCb3JqYTtMQVBUT1AtQ043TDlSODQ7MjAyMC0wMS0yMDsxMDo1NDo1MCBQTTs0LiDCsEMgYW5kIMKwRiBDb252ZXJ0ZXIuZnByZzsxMTAwOQ=="/>
+        <attribute name="edited" value="RWxhaW5lIEJlYXRyaXogQm9yamE7TEFQVE9QLUNON0w5Ujg0OzIwMjAtMDEtMjA7MTE6NDI6MjYgUE07MzthbmdnZTtERVNLVE9QLUJCN0VCUkQ7MjAxOS0xMS0xMTswMTowNDoxNSBBTTs0LiDCsEMgdG8gwrBGLmZwcmc7ODYwOA=="/>
+        <attribute name="edited" value="RWxhaW5lIEJlYXRyaXogQm9yamE7TEFQVE9QLUNON0w5Ujg0OzIwMjAtMDEtMjA7MTE6NDU6NTkgUE07MTA7NDMzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celsius" type="Real" array="False" size=""/>
+            <declare name="fahrenheit" type="Real" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="true"/>
+            <while expression="ExitCode == true">
+                <output expression="&quot;Hi there, Welcome to &#176;C to &#176;F Program&quot;" newline="True"/>
+                <output expression="&quot;Ready to convert &#176;C to &#176;F?&quot;" newline="True"/>
+                <output expression="&quot;Note: This is a case sensitive program&quot;" newline="True"/>
+                <output expression="&quot;Therefore, typing 'yes' as a response to continue is neccessary&quot;" newline="True"/>
+                <assign variable="Answer" expression="&quot;yes&quot;"/>
+                <input variable="Answer"/>
+                <if expression="Answer ==&quot;yes&quot;">
+                    <then>
+                        <output expression="&quot;Enter Celsius&quot;" newline="True"/>
+                        <input variable="Celsius"/>
+                        <assign variable="Fahrenheit" expression="(Celsius * 9/5) + 32"/>
+                        <output expression="Fahrenheit &amp; &quot; &#176;F&quot;" newline="True"/>
+                        <output expression="&quot;Restart?&quot;" newline="True"/>
+                        <output expression="&quot;Type 'yes' to restart&quot;" newline="True"/>
+                        <declare name="Reanswer" type="String" array="False" size=""/>
+                        <assign variable="Reanswer" expression="&quot;yes&quot;"/>
+                        <input variable="Reanswer"/>
+                        <if expression="Reanswer ==&quot;yes&quot;">
+                            <then>
+                                <call expression="Main"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot;Error. Please try again.&quot;" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

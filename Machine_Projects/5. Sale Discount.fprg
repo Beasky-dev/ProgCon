@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-07 09:33:43 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMDk7MjAyMC0wMS0wNzswODo1MDo0OSBBTTsyMjAx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMDk7MjAyMC0wMS0wNzswOTozMzo0MyBBTTsxOzIzMDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Type in your discount. For example it's 50%, type in 50&quot;" newline="True"/>
+            <declare name="Num1" type="Integer" array="False" size=""/>
+            <input variable="Num1"/>
+            <output expression="&quot;Now, type the price.&quot;" newline="True"/>
+            <declare name="Num2" type="Integer" array="False" size=""/>
+            <declare name="Num3" type="Integer" array="False" size=""/>
+            <input variable="Num2"/>
+            <assign variable="Num3" expression="Num2-(Num2*(Num1/100))"/>
+            <output expression="&quot;The discounted price is &quot; &amp; Num3" newline="True"/>
+            <output expression="&quot;Would you like to try again? Yes or No?&quot;" newline="True"/>
+            <declare name="Yes" type="Integer" array="False" size=""/>
+            <declare name="No" type="Integer" array="False" size=""/>
+            <declare name="Answer1" type="String" array="False" size=""/>
+            <input variable="Answer1"/>
+            <if expression="Answer1==&quot;Yes&quot;">
+                <then>
+                    <call expression="Main"/>
+                </then>
+                <else>
+                    <output expression="&quot;Thank you!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

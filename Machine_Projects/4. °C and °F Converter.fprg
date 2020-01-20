@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elaine Beatriz Borja"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-20 11:36:27 PM"/>
+        <attribute name="created" value="RWxhaW5lIEJlYXRyaXogQm9yamE7TEFQVE9QLUNON0w5Ujg0OzIwMjAtMDEtMjA7MTA6NTQ6NTAgUE07NDE2Nw=="/>
+        <attribute name="edited" value="RWxhaW5lIEJlYXRyaXogQm9yamE7TEFQVE9QLUNON0w5Ujg0OzIwMjAtMDEtMjA7MTA6NTY6MDYgUE07Mjt1c2VyO0FDRVI7MjAxOS0xMS0xMDswNjo1MDoyNCBQTTs2LiBEaXNjb3VudGVkIFByaWNlIG9mIFNhbGUgICgxKS5mcHJnOzk0NDU="/>
+        <attribute name="edited" value="RWxhaW5lIEJlYXRyaXogQm9yamE7TEFQVE9QLUNON0w5Ujg0OzIwMjAtMDEtMjA7MTE6MzY6MjcgUE07Mjs0Mjgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celsius" type="Real" array="False" size=""/>
+            <declare name="fahrenheit" type="Real" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="true"/>
+            <output expression="&quot;Hi there, Welcome to &#176;C to &#176;F and &#176;F to &#176;C converter&quot;" newline="True"/>
+            <while expression="ExitCode == true">
+                <output expression="&quot;Please type 'c' to convert to &#176;C.Please type 'f' to convert to&#176;F.&quot;" newline="True"/>
+                <output expression="&quot;Note: This is a case sensitive program&quot;" newline="True"/>
+                <assign variable="Answer" expression="&quot;c&quot;"/>
+                <input variable="Answer"/>
+                <if expression="Answer == &quot;c&quot;">
+                    <then>
+                        <output expression="&quot;Please input your &#176;F&quot;" newline="True"/>
+                        <input variable="fahrenheit"/>
+                        <assign variable="celsius" expression="(fahrenheit - 32) * 5/9"/>
+                        <output expression="celsius &amp; &quot; &#176;C&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="Answer == &quot;f&quot;">
+                            <then>
+                                <output expression="&quot;Please input your &#176;C&quot;" newline="True"/>
+                                <input variable="celsius"/>
+                                <assign variable="fahrenheit" expression="(celsius * 9/5) + 32"/>
+                                <output expression="fahrenheit &amp; &quot; &#176;F&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Error, Please try again.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Restart?&quot;" newline="True"/>
+                <output expression="&quot;Type 'yes' to restart&quot;" newline="True"/>
+                <output expression="&quot;Note: This is a case sensitive program&quot;" newline="True"/>
+                <assign variable="Again" expression="&quot;yes&quot;"/>
+                <input variable="Again"/>
+                <if expression="Again == &quot;yes&quot;">
+                    <then>
+                        <call expression="Main"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot;There was a case error, Please read 'Note' and try again.&quot;" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="angge"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-18 01:46:55 AM"/>
+        <attribute name="created" value="YW5nZ2U7REVTS1RPUC1CQjdFQlJEOzIwMTktMTEtMTE7MDE6MDQ6MTUgQU07MjgyNQ=="/>
+        <attribute name="edited" value="YW5nZ2U7REVTS1RPUC1CQjdFQlJEOzIwMTktMTEtMTE7MDE6NDQ6MjAgQU07NDsyOTM2"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAxOS0xMS0xMjswODo0OToyOSBBTTsyO1JhbXM7REVTS1RPUC1FNVBCMjdHOzIwMTktMTAtMjk7MDk6NTk6MjYgQU07Ym9yamEuZnByZzs2MTUx"/>
+        <attribute name="edited" value="RWxhaW5lIEJlYXRyaXogQm9yamE7TEFQVE9QLUNON0w5Ujg0OzIwMTktMTItMjg7MDI6NTk6MTUgUE07MzthbmdnZTtERVNLVE9QLUJCN0VCUkQ7MjAxOS0xMS0xMTswMTowNDoxNSBBTTtNMl8wM19CT1JKQV8odi4xKS5mcHJnOzg4OTM="/>
+        <attribute name="edited" value="RWxhaW5lIEJlYXRyaXogQm9yamE7TEFQVE9QLUNON0w5Ujg0OzIwMTktMTItMjg7MDM6MDI6MDEgUE07Mjs0Mjg1"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAyMC0wMS0xODswMTo0Njo1NSBBTTs1OzIzMDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hi there, Welcome to FEET to INCHES Program&quot;" newline="True"/>
+            <output expression="&quot;Ready to convert feet to inches?&quot;" newline="True"/>
+            <output expression="&quot;Note: This is a case sensitive program&quot;" newline="True"/>
+            <output expression="&quot;Therefore, typing 'yes' as a response to continue is neccessary&quot;" newline="True"/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <assign variable="Answer" expression="&quot;yes&quot;"/>
+            <input variable="Answer"/>
+            <if expression="Answer ==&quot;yes&quot;">
+                <then>
+                    <declare name="Inches" type="Real" array="False" size=""/>
+                    <declare name="Feet" type="Real" array="False" size=""/>
+                    <output expression="&quot;Enter Foot/Feet&quot;" newline="True"/>
+                    <input variable="Feet"/>
+                    <assign variable="Inches" expression="Feet * 12"/>
+                    <output expression="Inches &amp; &quot; inches&quot;" newline="True"/>
+                    <output expression="&quot;Restart?&quot;" newline="True"/>
+                    <output expression="&quot;Type 'yes' to restart&quot;" newline="True"/>
+                    <declare name="Reanswer" type="String" array="False" size=""/>
+                    <assign variable="Reanswer" expression="&quot;yes&quot;"/>
+                    <input variable="Reanswer"/>
+                    <if expression="Reanswer ==&quot;yes&quot;">
+                        <then>
+                            <call expression="Main"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Thank you for running the program.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Error, please try again.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

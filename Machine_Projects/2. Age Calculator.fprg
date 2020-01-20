@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:17:27 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMTI7MjAyMC0wMS0wNzswOTozODoxNiBBTTsyMTk2"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTI7MjAyMC0wMS0wNzsxMDo0ODoxNiBBTTsxOzIyOTc="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTk7MjAyMC0wMS0xNzsxMDoxNzoyNyBBTTsxOzIzMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome to our AGE PROGRAM&quot;" newline="True"/>
+            <declare name="CY, BY, CM, BM, CD, BD, diff1, diff2, diff3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Current Year&quot;" newline="True"/>
+            <input variable="CY"/>
+            <output expression="&quot;Current Month&quot;" newline="True"/>
+            <input variable="CM"/>
+            <output expression="&quot;Current day&quot;" newline="True"/>
+            <input variable="CD"/>
+            <output expression="&quot;WHAT IS YOUR BIRTHMONTH&quot;" newline="True"/>
+            <input variable="BM"/>
+            <output expression="&quot;INSERT YOUR BIRTHDAY&quot;" newline="True"/>
+            <input variable="BD"/>
+            <output expression="&quot;INSERT YEAR OF BIRTH.&quot;" newline="True"/>
+            <input variable="BY"/>
+            <assign variable="diff1" expression="CY-BY"/>
+            <if expression="BM&lt;CM">
+                <then>
+                    <output expression="&quot;You are&quot; &amp; diff1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="BM = CM">
+                        <then>
+                            <if expression="BD &gt; CD">
+                                <then>
+                                    <assign variable="diff2" expression="diff1 - 1"/>
+                                    <output expression="&quot;Your age is &quot; &amp; diff2" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="diff3" expression="diff1 - 1"/>
+                            <output expression="&quot;You are &quot; &amp; diff3" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

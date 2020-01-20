@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-20 10:51:58 PM"/>
+        <attribute name="created" value="dXNlcjtBQ0VSOzIwMTktMTEtMTA7MDY6NTA6MjQgUE07MjAwNg=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTA7MjAyMC0wMS0wNzsxMDozODo0MCBBTTsyOzIyOTI="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMzU7MjAyMC0wMS0wNzsxMTozMzo1NyBBTTsyOzIzMDM="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAyMC0wMS0xODswMToyNDowNiBBTTszO1JhbXM7REVTS1RPUC1FNVBCMjdHOzIwMTktMTAtMjk7MDk6NTk6MjYgQU07OS4gRGl2aXNpb24gKDEpLmZwcmc7NjczOA=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTM7MjAyMC0wMS0xODswMTo0MzozNiBBTTsyOzIyOTg="/>
+        <attribute name="edited" value="RWxhaW5lIEJlYXRyaXogQm9yamE7TEFQVE9QLUNON0w5Ujg0OzIwMjAtMDEtMjA7MTA6NTE6NTggUE07Mjs0Mjgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dollar" type="Real" array="False" size=""/>
+            <declare name="peso" type="Real" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="true"/>
+            <output expression="&quot;Hi there, Welcome to PESO to DOLLAR and DOLLAR to PESO converter&quot;" newline="True"/>
+            <while expression="ExitCode == true">
+                <output expression="&quot;Please type 'dollar' for $ conversion.Please type 'peso' for Php conversion&quot;" newline="True"/>
+                <output expression="&quot;Note: This is a case sensitive program&quot;" newline="True"/>
+                <assign variable="Answer" expression="&quot;dollar&quot;"/>
+                <input variable="Answer"/>
+                <if expression="Answer == &quot;dollar&quot;">
+                    <then>
+                        <output expression="&quot;Please input your amount&quot;" newline="True"/>
+                        <input variable="dollar"/>
+                        <assign variable="dollar" expression="50.92*dollar"/>
+                        <output expression="&quot;As of today, January 17, 2020&quot;" newline="True"/>
+                        <output expression="&quot;$&quot; &amp; dollar" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="Answer == &quot;peso&quot;">
+                            <then>
+                                <output expression="&quot;Please input your amount&quot;" newline="True"/>
+                                <input variable="peso"/>
+                                <assign variable="peso" expression="0.020*peso"/>
+                                <output expression="&quot;As of today, January 17, 2020&quot;" newline="True"/>
+                                <output expression="&quot;Php&quot; &amp; peso" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Error, Please try again.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Restart?&quot;" newline="True"/>
+                <output expression="&quot;Type 'yes' to restart&quot;" newline="True"/>
+                <output expression="&quot;Note: This is a case sensitive program&quot;" newline="True"/>
+                <assign variable="Again" expression="&quot;yes&quot;"/>
+                <input variable="Again"/>
+                <if expression="Again == &quot;yes&quot;">
+                    <then>
+                        <call expression="Main"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot;There was a case error, Please read 'Note' and try again.&quot;" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
